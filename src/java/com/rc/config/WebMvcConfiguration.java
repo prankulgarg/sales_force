@@ -59,14 +59,7 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
 		System.out.println("After loging");
 		dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		/*dataSource.setUrl("jdbc:mysql://103.206.248.235:3306/salesforce_new?useSSL=false");
-		dataSource.setUsername("ravendra");
-		dataSource.setPassword("Chauhan@123");*/ 
-		         
-        dataSource.setUrl("jdbc:mysql://localhost:3306/salesforce_new?useSSL=false");
-		dataSource.setUsername("root");
-		dataSource.setPassword("root"); 
-               
+	
                 
 		return dataSource;
 	}
